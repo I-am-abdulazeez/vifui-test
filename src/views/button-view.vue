@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { Icon } from '@iconify/vue'
 import { Button, Spinner } from '@vifui/core'
+import BackButton from '@/components/back-button.vue'
 
 const isLoading = ref(false)
 
@@ -94,10 +95,7 @@ const toggleLoading = (type: string) => {
 <template>
   <div class="min-h-screen p-8">
     <div class="max-w-7xl mx-auto space-y-12">
-      <Button variant="outline" href="/">
-        <Icon icon="gravity-ui:arrow-left" class="mr-2" />
-        Back to Home
-      </Button>
+      <BackButton />
       <!-- Header -->
       <div class="mb-8">
         <h1 class="text-4xl font-bold mb-2">Button Component</h1>
