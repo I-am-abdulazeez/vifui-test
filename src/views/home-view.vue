@@ -18,7 +18,7 @@ const components = [
     route: '/checkbox',
     icon: 'gravity-ui:check',
     description: 'Customizable checkboxes with different colors and sizes',
-    status: 'Coming Soon',
+    status: 'Ready',
   },
   {
     name: 'Accordion',
@@ -138,8 +138,8 @@ const navigateTo = (route: string) => {
       <!-- Quick Info -->
       <div class="mt-16 rounded-2xl p-8 text-white">
         <div class="flex items-start gap-6">
-          <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
-            <Icon icon="gravity-ui:lightbulb" class="text-2xl" />
+          <div class="w-12 h-12 bg-gray-600 rounded-xl flex items-center justify-center shrink-0">
+            <Icon icon="bx:bulb" class="text-2xl text-white" />
           </div>
           <div>
             <h3 class="text-2xl font-bold mb-2 text-gray-700">Testing Made Easy</h3>
@@ -148,15 +148,7 @@ const navigateTo = (route: string) => {
               and states. Interactive demos let you test functionality in real-time.
             </p>
             <div class="flex gap-3">
-              <Button variant="secondary" size="sm" @click="navigateTo('/button')">
-                <Icon icon="gravity-ui:play" />
-                Start Testing
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                class="text-white border-white/30 hover:bg-white/10"
-              >
+              <Button variant="soft" size="sm" @click="navigateTo('/button')">
                 <Icon icon="gravity-ui:book" />
                 View Docs
               </Button>
