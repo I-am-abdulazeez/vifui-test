@@ -32,7 +32,7 @@ const components = [
     route: '/card',
     icon: 'gravity-ui:square-dashed',
     description: 'Flexible card components with hover effects',
-    status: 'Coming Soon',
+    status: 'Ready',
   },
 ]
 
