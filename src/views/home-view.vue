@@ -159,7 +159,7 @@ const navigateTo = (route: string) => {
 
       <!-- Footer -->
       <div class="mt-16 text-center text-gray-500">
-        <p>Built with ❤️ for VifUI Component Library</p>
+        <p>Built by VifUI Team</p>
       </div>
     </div>
   </div>
