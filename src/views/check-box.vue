@@ -9,8 +9,6 @@ import {
   CheckboxGroupItem,
   Button,
 } from '@vifui/core'
-import BackButton from '@/components/back-button.vue'
-
 const sizes = ['sm', 'md', 'lg'] as const
 const colors = ['brand', 'success', 'warning', 'danger', 'neutral'] as const
 
@@ -47,7 +45,6 @@ function toggleSelectAll() {
 <template>
   <div class="min-h-screen p-8">
     <div class="max-w-7xl mx-auto space-y-12">
-      <BackButton />
       <!-- Header -->
       <div class="mb-8">
         <h1 class="text-4xl font-bold mb-2">Checkbox Component</h1>
