@@ -157,7 +157,7 @@ const toggleLoading = (cardId: string) => {
           <CardRoot hoverable>
             <CardMedia ratio="video">
               <div
-                class="h-full w-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500"
+                class="h-full w-full bg-linear-to-br from-purple-500 via-pink-500 to-orange-500"
               />
             </CardMedia>
             <CardHeader>
