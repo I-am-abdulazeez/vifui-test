@@ -286,7 +286,7 @@ const toggleLoading = () => {
                     <Badge color="success" size="xs">New</Badge>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-lg font-bold">$89</span>
+                    <span class="text-lg font-bold">₦89,000</span>
                     <div class="flex items-center gap-1 text-xs">
                       <Icon icon="lucide:star" class="text-yellow-400" />
                       <span>4.7</span>
@@ -312,7 +312,10 @@ const toggleLoading = () => {
                     <Badge color="danger" size="xs">-20%</Badge>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-lg font-bold">$399</span>
+                    <span class="text-lg font-bold">
+                      ₦199,000
+                      <span class="text-sm font-normal line-through text-gray-500">₦249,000</span>
+                    </span>
                     <div class="flex items-center gap-1 text-xs">
                       <Icon icon="lucide:star" class="text-yellow-400" />
                       <span>4.9</span>
@@ -338,7 +341,10 @@ const toggleLoading = () => {
                     <Badge color="warning" size="xs">Hot</Badge>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-lg font-bold">$249</span>
+                    <span class="text-lg font-bold">
+                      ₦249,000
+                      <span class="text-sm font-normal line-through text-gray-500">₦299,000</span>
+                    </span>
                     <div class="flex items-center gap-1 text-xs">
                       <Icon icon="lucide:star" class="text-yellow-400" />
                       <span>4.8</span>
@@ -364,7 +370,7 @@ const toggleLoading = () => {
                     <Badge color="brand" size="xs">Best</Badge>
                   </div>
                   <div class="flex items-center justify-between">
-                    <span class="text-lg font-bold">$129</span>
+                    <span class="text-lg font-bold"> ₦129,000 </span>
                     <div class="flex items-center gap-1 text-xs">
                       <Icon icon="lucide:star" class="text-yellow-400" />
                       <span>4.6</span>

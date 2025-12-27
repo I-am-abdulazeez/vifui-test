@@ -111,7 +111,7 @@ function getIconForColor(color: Color): string {
                 <div class="space-y-2">
                   <div class="flex justify-between">
                     <span>Bonus Credits</span>
-                    <strong>$50</strong>
+                    <strong>₦50,000</strong>
                   </div>
                   <div class="flex justify-between">
                     <span>Free Trial Days</span>

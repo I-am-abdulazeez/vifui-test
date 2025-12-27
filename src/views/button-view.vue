@@ -214,8 +214,8 @@ const toggleLoading = (id: string) => {
             <h3 class="text-xl font-bold mb-1">Premium Headphones</h3>
             <p class="text-sm text-gray-600 mb-2">Active noise cancellation, 40hr battery</p>
             <div class="flex items-baseline gap-2 mb-4">
-              <span class="text-2xl font-bold">$299</span>
-              <span class="text-sm text-gray-500 line-through">$399</span>
+              <span class="text-2xl font-bold">₦299,000</span>
+              <span class="text-sm text-gray-500 line-through">₦399,000</span>
             </div>
           </div>
           <div class="space-y-2">
