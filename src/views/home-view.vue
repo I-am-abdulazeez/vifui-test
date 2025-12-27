@@ -16,22 +16,50 @@ const components = [
   {
     name: 'Checkbox',
     route: '/checkbox',
-    icon: 'gravity-ui:check',
+    icon: 'bx:check',
     description: 'Customizable checkboxes with different colors and sizes',
     status: 'Ready',
   },
   {
     name: 'Accordion',
     route: '/accordion',
-    icon: 'gravity-ui:chevron-down',
+    icon: 'bx:chevron-down',
     description: 'Expandable accordions with multiple style variants',
-    status: 'Coming Soon',
+    status: 'Ready',
   },
   {
     name: 'Card',
     route: '/card',
     icon: 'gravity-ui:square-dashed',
     description: 'Flexible card components with hover effects',
+    status: 'Ready',
+  },
+  {
+    name: 'Alert',
+    route: '/alert',
+    icon: 'gravity-ui:circle-info',
+    description: 'Notification alerts with multiple variants and actions',
+    status: 'Ready',
+  },
+  {
+    name: 'Avatar',
+    route: '/avatar',
+    icon: 'gravity-ui:person',
+    description: 'User avatars with different shapes, sizes, and states',
+    status: 'Ready',
+  },
+  {
+    name: 'Badge',
+    route: '/badge',
+    icon: 'gravity-ui:tag',
+    description: 'Status badges with colors, icons, and removable options',
+    status: 'Ready',
+  },
+  {
+    name: 'Breadcrumb',
+    route: '/breadcrumbs',
+    icon: 'gravity-ui:arrow-right',
+    description: 'Navigation breadcrumbs with custom separators',
     status: 'Ready',
   },
 ]
@@ -45,7 +73,7 @@ const navigateTo = (route: string) => {
 
 <template>
   <div class="min-h-screen">
-    <div class="max-w-7xl mx-auto px-8 py-4">
+    <div class="max-w-5xl mx-auto px-8 py-4">
       <!-- Header -->
       <div class="text-center mb-16">
         <div class="inline-flex items-center gap-3 mb-6">
@@ -67,7 +95,7 @@ const navigateTo = (route: string) => {
             <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
               <Icon icon="gravity-ui:layers" class="text-blue-600 text-xl" />
             </div>
-            <span class="text-3xl font-bold text-gray-900">4</span>
+            <span class="text-3xl font-bold text-gray-900">{{ components.length }}</span>
           </div>
           <p class="text-gray-600">Components</p>
         </div>
