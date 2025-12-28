@@ -165,7 +165,7 @@ const navigateTo = (route: string) => {
             <div class="flex items-start justify-between mb-4">
               <div class="flex items-center gap-4">
                 <div
-                  class="w-14 h-14 bg-linear-to-br from-gray-400 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
+                  class="w-14 h-14 bg-linear-to-br from-gray-700 to-purple-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform"
                 >
                   <Icon :icon="component.icon" class="text-white text-2xl" />
                 </div>
