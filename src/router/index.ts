@@ -47,6 +47,26 @@ const router = createRouter({
       path: "/breadcrumbs",
       name: "breadcrumbs",
       component: () => import("@/views/bread-crumbs.vue"),
+    },
+    {
+      path: '/divider',
+      name: 'divider',
+      component: () => import('@/views/divider-view.vue')
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import('@/views/list-view.vue')
+    },
+    {
+      path: '/tabs',
+      name: 'tabs',
+      component: () => import('@/views/tabs-view.vue')
+    },
+    {
+      path: '/tooltip',
+      name: 'tooltip',
+      component: () => import('@/views/tooltip-view.vue')
     }
   ],
 })
