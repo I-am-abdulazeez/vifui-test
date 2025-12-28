@@ -90,6 +90,13 @@ const components = [
     description: 'Contextual tooltips with rich content support',
     status: 'Ready',
   },
+  {
+    name: 'Switch',
+    route: '/switch',
+    icon: 'gravity-ui:toggle-on',
+    description: 'Customizable switches with different colors and sizes',
+    status: 'Coming Soon',
+  },
 ]
 
 const navigateTo = (route: string) => {
