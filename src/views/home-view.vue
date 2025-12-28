@@ -95,7 +95,7 @@ const components = [
     route: '/switch',
     icon: 'gravity-ui:toggle-on',
     description: 'Customizable switches with different colors and sizes',
-    status: 'Coming Soon',
+    status: 'Ready',
   },
 ]
 
