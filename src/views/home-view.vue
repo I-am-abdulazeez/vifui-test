@@ -1,101 +1,184 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { Button } from '@vifui/core'
+import { Badge, Button } from '@vifui/core'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
 const components = [
   {
-    name: 'Button',
-    route: '/button',
-    icon: 'bx:joystick-button',
-    description: 'Interactive buttons with multiple variants, colors, sizes, and loading states',
-    status: 'Ready',
-  },
-  {
-    name: 'Checkbox',
-    route: '/checkbox',
-    icon: 'bx:check',
-    description: 'Customizable checkboxes with different colors and sizes',
-    status: 'Ready',
-  },
-  {
     name: 'Accordion',
     route: '/accordion',
-    icon: 'bx:chevron-down',
     description: 'Expandable accordions with multiple style variants',
-    status: 'Ready',
-  },
-  {
-    name: 'Card',
-    route: '/card',
-    icon: 'gravity-ui:square-dashed',
-    description: 'Flexible card components with hover effects',
     status: 'Ready',
   },
   {
     name: 'Alert',
     route: '/alert',
-    icon: 'gravity-ui:circle-info',
     description: 'Notification alerts with multiple variants and actions',
     status: 'Ready',
   },
   {
     name: 'Avatar',
     route: '/avatar',
-    icon: 'gravity-ui:person',
     description: 'User avatars with different shapes, sizes, and states',
     status: 'Ready',
   },
   {
     name: 'Badge',
     route: '/badge',
-    icon: 'gravity-ui:tag',
     description: 'Status badges with colors, icons, and removable options',
     status: 'Ready',
   },
   {
     name: 'Breadcrumb',
     route: '/breadcrumbs',
-    icon: 'gravity-ui:arrow-right',
     description: 'Navigation breadcrumbs with custom separators',
+    status: 'Ready',
+  },
+  {
+    name: 'Button',
+    route: '/button',
+    description: 'Interactive buttons with multiple variants, colors, sizes, and loading states',
+    status: 'Ready',
+  },
+  {
+    name: 'Card',
+    route: '/card',
+    description: 'Flexible card components with hover effects',
+    status: 'Ready',
+  },
+  {
+    name: 'Checkbox',
+    route: '/checkbox',
+    description: 'Customizable checkboxes with different colors and sizes',
     status: 'Ready',
   },
   {
     name: 'Divider',
     route: '/divider',
-    icon: 'gravity-ui:minus',
     description: 'Content dividers with labels and orientations',
     status: 'Ready',
   },
   {
     name: 'List',
     route: '/list',
-    icon: 'gravity-ui:list-ul',
     description: 'Flexible lists with avatars, icons, and actions',
+    status: 'Ready',
+  },
+  {
+    name: 'Popover',
+    route: '/popover',
+    description: 'Contextual popovers with rich content and multiple placements',
+    status: 'Ready',
+  },
+  {
+    name: 'Spinner',
+    route: '/spinner',
+    description: 'Loading spinners with multiple animation types and colors',
+    status: 'Ready',
+  },
+  {
+    name: 'Switch',
+    route: '/switch',
+    description: 'Customizable switches with different colors and sizes',
     status: 'Ready',
   },
   {
     name: 'Tabs',
     route: '/tabs',
-    icon: 'gravity-ui:layout-cells-large',
     description: 'Tabbed navigation with pill and link variants',
     status: 'Ready',
   },
   {
     name: 'Tooltip',
     route: '/tooltip',
-    icon: 'gravity-ui:circle-question',
     description: 'Contextual tooltips with rich content support',
     status: 'Ready',
   },
   {
-    name: 'Switch',
-    route: '/switch',
-    icon: 'gravity-ui:toggle-on',
-    description: 'Customizable switches with different colors and sizes',
+    name: 'Upload',
+    route: '/upload',
+    description: 'File upload with drag-and-drop and validation',
     status: 'Ready',
+  },
+  {
+    name: 'Dialog',
+    route: '/dialog',
+    description: 'Modal dialogs with various sizes and states',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Dropdown',
+    route: '/dropdown',
+    description: 'Dropdown menus with rich content and keyboard navigation',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Input',
+    route: '/input',
+    description: 'Text inputs with validation, icons, and different states',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Notification',
+    route: '/notification',
+    description: 'Toast notifications with multiple positions and actions',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Pagination',
+    route: '/pagination',
+    description: 'Page navigation with customizable styles',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Radio',
+    route: '/radio',
+    description: 'Radio buttons with different colors and sizes',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Select',
+    route: '/select',
+    description: 'Dropdown select with search and multi-select support',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Table',
+    route: '/table',
+    description: 'Data tables with sorting, filtering, and pagination',
+    status: 'Coming Soon',
+  },
+  {
+    name: 'Textarea',
+    route: '/textarea',
+    description: 'Multi-line text inputs with auto-resize support',
+    status: 'Coming Soon',
+  },
+]
+
+const stats = [
+  {
+    label: 'Components',
+    value: components.length,
+    icon: 'gravity-ui:layers',
+    bg: 'bg-blue-100',
+    color: 'text-blue-600',
+  },
+  {
+    label: 'Variants Tested',
+    value: '50+',
+    icon: 'gravity-ui:palette',
+    bg: 'bg-purple-100',
+    color: 'text-purple-600',
+  },
+  {
+    label: 'Components Ready',
+    value: components.filter((c) => c.status === 'Ready').length,
+    icon: 'gravity-ui:rocket',
+    bg: 'bg-green-100',
+    color: 'text-green-600',
   },
 ]
 
@@ -113,13 +196,13 @@ const navigateTo = (route: string) => {
       <div class="text-center mb-16">
         <div class="inline-flex items-center gap-3 mb-6">
           <div
-            class="w-16 h-16 bg-linear-to-br from-gray-600 to-purple-700 rounded-2xl flex items-center justify-center"
+            class="w-16 h-16 bg-linear-to-br from-blue-500 to-purple-800 rounded-2xl flex items-center justify-center"
           >
             <Icon icon="gravity-ui:cube" class="text-white text-3xl" />
           </div>
         </div>
-        <h1 class="text-6xl font-bold mb-4">VifUI Testing Ground</h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        <h1 class="text-5xl font-bold mb-4">VifUI Testing Ground</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
           A comprehensive testing environment for VifUI components. Test every variant, color, size,
           and state in one place.
         </p>
@@ -127,41 +210,27 @@ const navigateTo = (route: string) => {
 
       <!-- Stats -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+        <div
+          v-for="stat in stats"
+          :key="stat.label"
+          class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100"
+        >
           <div class="flex items-center gap-3 mb-2">
-            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-              <Icon icon="gravity-ui:layers" class="text-blue-600 text-xl" />
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center" :class="stat.bg">
+              <Icon :icon="stat.icon" class="text-xl" :class="stat.color" />
             </div>
-            <span class="text-3xl font-bold text-gray-900">12</span>
+            <span class="text-2xl font-bold text-gray-900">
+              {{ stat.value }}
+            </span>
           </div>
-          <p class="text-gray-600">Components</p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="flex items-center gap-3 mb-2">
-            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-              <Icon icon="gravity-ui:palette" class="text-purple-600 text-xl" />
-            </div>
-            <span class="text-3xl font-bold text-gray-900">50+</span>
-          </div>
-          <p class="text-gray-600">Variants Tested</p>
-        </div>
-
-        <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-          <div class="flex items-center gap-3 mb-2">
-            <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-              <Icon icon="gravity-ui:rocket" class="text-green-600 text-xl" />
-            </div>
-            <span class="text-3xl font-bold text-gray-900">12</span>
-          </div>
-          <p class="text-gray-600">Components Ready</p>
+          <p class="text-gray-600 text-sm">{{ stat.label }}</p>
         </div>
       </div>
 
       <!-- Components Grid -->
       <div>
         <h2 class="text-3xl font-bold mb-8 text-gray-900">Available Components</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
           <div
             v-for="component in components"
             :key="component.name"
@@ -171,22 +240,14 @@ const navigateTo = (route: string) => {
           >
             <div class="flex items-start justify-between mb-4">
               <div class="flex items-center gap-4">
-                <div
-                  class="w-14 h-14 bg-linear-to-br from-gray-500 to-purple-600 rounded-md flex items-center justify-center group-hover:scale-110 transition-transform"
-                >
-                  <Icon :icon="component.icon" class="text-white text-2xl" />
-                </div>
                 <div>
-                  <h3 class="text-2xl font-bold text-gray-900 mb-1">{{ component.name }}</h3>
-                  <span
-                    class="inline-block px-3 py-1 rounded-full text-xs font-semibold"
-                    :class="{
-                      'bg-green-100 text-green-700': component.status === 'Ready',
-                      'bg-amber-100 text-amber-700': component.status === 'Coming Soon',
-                    }"
+                  <h3 class="text-xl font-bold text-gray-800 mb-1">{{ component.name }}</h3>
+                  <Badge
+                    variant="soft"
+                    :color="component.status === 'Ready' ? 'success' : 'warning'"
                   >
                     {{ component.status }}
-                  </span>
+                  </Badge>
                 </div>
               </div>
               <Icon
@@ -195,7 +256,7 @@ const navigateTo = (route: string) => {
                 class="text-gray-400 text-xl group-hover:text-blue-600 group-hover:translate-x-1 transition-all"
               />
             </div>
-            <p class="text-gray-600 leading-relaxed">{{ component.description }}</p>
+            <p class="text-gray-600 leading-relaxed text-sm">{{ component.description }}</p>
           </div>
         </div>
       </div>
