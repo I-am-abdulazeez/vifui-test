@@ -9,21 +9,6 @@ const router = createRouter({
       component: () => import('@/views/home-view.vue')
     },
     {
-      path: '/button',
-      name: 'button',
-      component: () => import('@/views/button-view.vue')
-    },
-    {
-      path: '/checkbox',
-      name: 'checkbox',
-      component: () => import('@/views/check-box.vue')
-    },
-    {
-      path: '/card',
-      name: 'card',
-      component: () => import('@/views/card-view.vue')
-    },
-    {
       path: '/accordion',
       name: 'accordion',
       component: () => import('@/views/accordion-view.vue')
@@ -37,6 +22,21 @@ const router = createRouter({
       path: "/avatar",
       name: "avatar",
       component: () => import("@/views/avatar-view.vue"),
+    },
+    {
+      path: '/button',
+      name: 'button',
+      component: () => import('@/views/button-view.vue')
+    },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('@/views/card-view.vue')
+    },
+    {
+      path: '/checkbox',
+      name: 'checkbox',
+      component: () => import('@/views/check-box.vue')
     },
     {
       path: "/badge",
@@ -59,6 +59,11 @@ const router = createRouter({
       component: () => import('@/views/list-view.vue')
     },
     {
+      path: '/popover',
+      name: 'popover',
+      component: () => import('@/views/popover-view.vue')
+    },
+    {
       path: '/tabs',
       name: 'tabs',
       component: () => import('@/views/tabs-view.vue')
@@ -69,9 +74,19 @@ const router = createRouter({
       component: () => import('@/views/tooltip-view.vue')
     },
     {
+      path: "/spinner",
+      name: "spinner",
+      component: () => import('@/views/spinner-view.vue')
+    },
+    {
       path: '/switch',
       name: 'switch',
       component: () => import('@/views/switch-view.vue')
+    },
+    {
+      path: '/upload',
+      name: 'upload',
+      component: () => import('@/views/upload-view.vue')
     }
   ],
 })
