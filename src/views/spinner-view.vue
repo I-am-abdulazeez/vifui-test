@@ -7,7 +7,6 @@ const colors = ['current', 'primary', 'secondary', 'success', 'warning', 'danger
 const types = [
   'default',
   'border',
-  'point',
   'points',
   'radius',
   'corners',
@@ -284,7 +283,7 @@ const simulateLoading = () => {
 
       <!-- All Animation Types Showcase -->
       <section class="space-y-6">
-        <h2 class="text-2xl font-semibold">All 14 Animation Types</h2>
+        <h2 class="text-2xl font-semibold">All 13 Animation Types</h2>
         <div class="bg-white rounded-lg border border-gray-200 p-6">
           <div class="grid grid-cols-3 md:grid-cols-5 gap-6">
             <div v-for="type in types" :key="type" class="flex flex-col items-center gap-3">
