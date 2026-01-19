@@ -15,11 +15,11 @@ importers:
         specifier: ^4.1.17
         version: 4.1.17(vite@7.2.4(@types/node@22.19.1)(jiti@2.6.1)(lightningcss@1.30.2))
       '@vifui/core':
-        specifier: 0.6.0-alpha.13
-        version: 0.6.0-alpha.13(@iconify/vue@5.0.0(vue@3.5.25(typescript@5.9.3)))(@vifui/styles@0.6.0-alpha.13(tailwindcss@4.1.17))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
+        specifier: 0.6.0-alpha.14
+        version: 0.6.0-alpha.14(@iconify/vue@5.0.0(vue@3.5.25(typescript@5.9.3)))(@vifui/styles@0.6.0-alpha.14(tailwindcss@4.1.17))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
       '@vifui/styles':
-        specifier: 0.6.0-alpha.13
-        version: 0.6.0-alpha.13(tailwindcss@4.1.17)
+        specifier: 0.6.0-alpha.14
+        version: 0.6.0-alpha.14(tailwindcss@4.1.17)
       tailwindcss:
         specifier: ^4.1.17
         version: 4.1.17
@@ -937,8 +937,8 @@ packages:
     resolution: {integrity: sha512-T0XJMaRPOH3+LBbAfzR2jalckP1MSG/L9eUtY0DEzUyVaXJ/t6zN0nR7co5kz0Jko/nkSYCBRkz1djvjajVTTg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vifui/core@0.6.0-alpha.13':
-    resolution: {integrity: sha512-MyRoE+21VDkxkIFmrT+LbLW+5gwsRzuPXhxdh4RKW3Tq1C3NaHINfDZ1XuarE+R0tVnm2BTdmDZLVt2cAR7MUg==}
+  '@vifui/core@0.6.0-alpha.14':
+    resolution: {integrity: sha512-yNSqaNT4nHS8CrmhGY3M1tQZA4TMH1uDr2sW/ugQkqmICL2vnnX/UQgHspvQsocr1hN0GUL8K++cD9CjUlK5BQ==}
     peerDependencies:
       '@iconify/vue': '>=4.0.0'
       '@vifui/styles': workspace:*
@@ -948,8 +948,8 @@ packages:
       '@iconify/vue':
         optional: true
 
-  '@vifui/styles@0.6.0-alpha.13':
-    resolution: {integrity: sha512-mX4bMTcWzYErjTfDhDb17wUxDgoP6NfB1i6+48I+WeXl1daLz/KredmeobSLnz8BLAfh+Izzpt7GcUTW3wG+yg==}
+  '@vifui/styles@0.6.0-alpha.14':
+    resolution: {integrity: sha512-Cx2aSEkdRvKDCS5U1YVFYMZ+I9IuaGkmsOhwDsPHCAI5qOrULXLVgB7rBSnDYGuum1TesdV+xdjyWrZmFdFXMg==}
     peerDependencies:
       tailwindcss: '>=4.0.0'
 
@@ -2796,10 +2796,10 @@ snapshots:
       '@typescript-eslint/types': 8.48.0
       eslint-visitor-keys: 4.2.1
 
-  '@vifui/core@0.6.0-alpha.13(@iconify/vue@5.0.0(vue@3.5.25(typescript@5.9.3)))(@vifui/styles@0.6.0-alpha.13(tailwindcss@4.1.17))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))':
+  '@vifui/core@0.6.0-alpha.14(@iconify/vue@5.0.0(vue@3.5.25(typescript@5.9.3)))(@vifui/styles@0.6.0-alpha.14(tailwindcss@4.1.17))(tailwindcss@4.1.17)(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@internationalized/date': 3.10.0
-      '@vifui/styles': 0.6.0-alpha.13(tailwindcss@4.1.17)
+      '@vifui/styles': 0.6.0-alpha.14(tailwindcss@4.1.17)
       clsx: 2.1.1
       reka-ui: 2.6.0(typescript@5.9.3)(vue@3.5.25(typescript@5.9.3))
       tailwind-merge: 3.3.1
@@ -2812,7 +2812,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  '@vifui/styles@0.6.0-alpha.13(tailwindcss@4.1.17)':
+  '@vifui/styles@0.6.0-alpha.14(tailwindcss@4.1.17)':
     dependencies:
       tailwindcss: 4.1.17
 
