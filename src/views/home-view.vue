@@ -103,6 +103,12 @@ const components = [
     status: 'Ready',
   },
   {
+    name: 'Skeleton',
+    route: '/skeleton',
+    description: 'Loading placeholders with multiple presets and animations',
+    status: 'Ready',
+  },
+  {
     name: 'Dialog',
     route: '/dialog',
     description: 'Modal dialogs with various sizes and states',
